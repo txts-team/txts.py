@@ -27,5 +27,5 @@ except
 
 ## Links
 
-[Txts Discord]()<br>
+[Txts Discord](https://discord.gg/Y5QfmF9uW3)<br>
 [Txts official instance](https://txts.sudokoko.xyz/)
