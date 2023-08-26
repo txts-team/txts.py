@@ -8,7 +8,7 @@ If you make a pull request please use proper labels and follow the contributor [
 ## Installing
 
 ```
-python3 -m pip install -U txts
+python3 -m pip install -U txts.py
 ```
 
 ## Simple Example
