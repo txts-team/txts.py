@@ -10,7 +10,7 @@ with open("README.md", "r") as fh:
 setup(
     name='discord.py',
     author='smugay',
-    description='Python wrapper for interacting txts',
+    description='Python wrapper for interacting with txts',
     long_description=long_description,
     long_description_content_type="text/markdown",
     license='MIT',
