@@ -1,17 +1,17 @@
-# txts.py
+# :newspaper: txts.py
 *Python wrapper for interacting with [txts](https://https://github.com/txts-team/txts)*
-## Contributing
+## :hammer_and_wrench: Contributing
 
 This project is very much work in progress, any contributions would be appreciated<br>
 If you make a pull request please use proper labels and follow the contributor [Code Of Conduct](https://github.com/txts-team/txts.py/blob/master/CODE_OF_CONDUCT.md)
 
-## Installing
+## :arrow_down: Installing
 
 ```
 python3 -m pip install -U txts.py
 ```
 
-## Simple Example
+## :bulb: Simple Example
 
 ```python
 import txts
@@ -25,7 +25,7 @@ except
     print('Failed to update page!')
 ```    
 
-## Links
+## :link: Links
 
-[Txts Discord](https://discord.gg/Y5QfmF9uW3)<br>
-[Txts official instance](https://txts.sudokoko.xyz/)
+[Txts Discord](https://discord.gg/Y5QfmF9uW3) :headphones: <br>
+[Txts official instance](https://txts.sudokoko.xyz/) :globe_with_meridians:
