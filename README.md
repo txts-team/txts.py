@@ -1,4 +1,4 @@
-# txts.py
+# :newspaper: txts.py
 *Python wrapper for interacting with [txts](https://https://github.com/txts-team/txts)*
 ## Contributing
 
