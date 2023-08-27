@@ -21,7 +21,7 @@ print(instance.Status())
 try:
     instance.EditPage('username','secret','content')
     print('Sucessfully updated page!')
-except
+except:
     print('Failed to update page!')
 ```    
 
