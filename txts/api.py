@@ -67,9 +67,25 @@ class TxtInstance:
     
     def EditPage(self, username, secret, content):
         complete_url = (f'{self.url}/@{username}/edit')
-        token, sesh = TokenSeshHandler(complete_url)
+        try:
+            token, sesh = TokenSeshHandler(complete_url)
+        except:
+            raise Exception(
+                'Failed to get __RequestVerificationToken')
         payload = {'__RequestVerificationToken': token, 
            'content': content,
             'secret': secret}
-        poster = sesh.post(complete_url, data=payload, headers=headers)
-        handleCodes(poster.status_code)
+        try:
+            poster = sesh.post(complete_url, data=payload, headers=headers)
+            soup = BeautifulSoup(poster.text, 'html.parser')
+        except:
+            raise Exception(
+                'Failed to send request')
+        if 'edited successfully' in (soup):
+            return
+        elif 'Invalid page secret' in (soup): 
+            raise Exception(
+                'Invalid page secret')
+        else:
+            raise ConnectionRefusedError(
+            'Request was refused by server, \'content\' may be invalid')
