@@ -1,8 +1,7 @@
 from setuptools import setup, find_packages
 
-requirements = []
-with open('requirements.txt') as f:
-    requirements = f.read().splitlines()
+requirements = ['beautifulsoup4==4.12.2',
+'Requests==2.31.0']
 
 with open("README.md", "r") as fh:
     long_description = fh.read()
