@@ -7,7 +7,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setup(
-    name='discord.py',
+    name='txts.py',
     author='smugay',
     description='Python wrapper for interacting with txts',
     long_description=long_description,
